@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>Mathieu Thomas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+    <!-- Header -->
+
+    <div class="w3-top w3-text-white w3-allerta  " style="background-color:#000000;">
+
+    <!-- Menu de navigation -->
+      <div class="w3-large">
+        <span class="w3-button w3-large w3-black w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-center w3-padding-24"> Photo en vrac !</div>
+      </div>
+    </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="margin-top: 5%">
+
+    <div class="w3-container w3-card w3-padding-16 w3-center" style="width:100%">
+      <div class="w3-text-black w3-border-bottom w3-border-black">
+        <h1>S'inscrire au site internet</h1>
+      </div>
+    </div>
+    <div class="w3-padding-16"></div>
+    <form action="Inscription.php" method="post">
+      <div class="w3-row">
+        <div class="w3-third">
+          Pseudo
+        </div>
+        <div class="w3-twothird">
+          <input class="w3-input w3-border" type="text" name="pseudo" required/>
+        </div>
+        <div class="w3-third">
+          Nom de famille 
+        </div>
+        <div class="w3-twothird">
+          <input class="w3-input w3-border" type="text" name="nom" requiered/>
+        </div>
+        <div class="w3-third">
+          Prénom 
+        </div>
+        <div class="w3-twothird">
+          <input class="w3-input w3-border" type="text" name="prenom" requiered/>
+        </div>
+        <div class="w3-third">
+          Mot de passe
+        </div>
+        <div class="w3-twothird">
+          <input class="w3-input w3-border" type="password" name="pass" requiered/>
+        </div>
+        <div class="w3-third">
+          Adresse Email <br>
+        </div>
+        <div class="w3-twothird">
+          <input class="w3-input w3-border" type="mail" name="email" requiered/>
+        </div>
+      </div>
+
+      <div class="w3-row w3-margin-top">
+        <div class="w3-twothird" style="text-align: right">
+          <input class="w3-button w3-grey w3-round" type="submit" value="Envoyez">
+        </div>
+      </div>
+
+      <div class="w3-row w3-margin-top">
+        Tous les champs doivent être remplis ! Faîtes attention aux erreurs !
+      </div>
+      
+    </form>
+
+
+
+  <!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-grey w3-center w3-opacity w3-xlarge" style="margin-top:15%">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <p class="w3-medium">Utiliser par Mathieu Thomas, crée par W3.css.</p>
+  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-red">w3.css</a></p>
+</footer>
+
+<script>
+
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
